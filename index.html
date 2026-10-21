@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DOM Playground</h1>
+      <button id="toggleTheme" class="btn">Toggle theme</button>
+    </header>
+
+    <main class="container">
+      <!-- Widget 1: Counter -->
+      <section class="card">
+        <h2>Counter</h2>
+        <p id="count">0</p>
+        <button id="increase" class="btn">+</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="decrease" class="btn">-</button>
+      </section>
+
+      <!-- Widget 2: Random color changer -->
+      <section class="card">
+        <h2>Random Color Changer</h2>
+        <button id="changeColor" class="btn">Change color</button>
+      </section>
+
+      <!-- Widget 3: Color picker buttons -->
+      <section class="card">
+        <h2>Color Picker</h2>
+        <div class="color-box"></div>
+        <button class="btn color-btn">Red</button>
+        <button class="btn color-btn">Green</button>
+        <button class="btn color-btn">Blue</button>
+      </section>
+
+      <!-- Widget 4: Live text preview -->
+      <section class="card">
+        <h2>Live Text Preview</h2>
+        <input type="text" id="inputText" placeholder="Type something..." />
+        <p id="textPreview"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
