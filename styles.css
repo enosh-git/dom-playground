@@ -125,6 +125,14 @@ h2, p {
   font-size: 3rem;
 }
 
+.count-positive {
+  color: green;
+}
+
+.count-negative {
+  color: red;
+}
+
 .color-box {
   height: 10rem;
   width: 20rem;
