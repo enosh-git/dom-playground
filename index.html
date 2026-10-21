@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Henny+Penny&display=swap" rel="stylesheet">
     <title>DOM Playground</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="dark">
     <header>
       <h1>DOM Playground</h1>
       <button id="toggleTheme" class="btn">Toggle theme</button>
@@ -17,9 +20,12 @@
       <section class="card">
         <h2>Counter</h2>
         <p id="count">0</p>
-        <button id="increase" class="btn">+</button>
-        <button id="reset" class="btn">Reset</button>
-        <button id="decrease" class="btn">-</button>
+        <div class="button-container">
+          <button id="increase" class="btn">+</button>
+          <button id="reset" class="btn">Reset</button>
+          <button id="decrease" class="btn">-</button>
+        </div>
+        
       </section>
 
       <!-- Widget 2: Random color changer -->
@@ -32,9 +38,11 @@
       <section class="card">
         <h2>Color Picker</h2>
         <div class="color-box"></div>
-        <button class="btn color-btn">Red</button>
-        <button class="btn color-btn">Green</button>
-        <button class="btn color-btn">Blue</button>
+        <div class="button-container">
+          <button class="btn color-btn-red">Red</button>
+          <button class="btn color-btn-green">Green</button>
+          <button class="btn color-btn-blue">Blue</button>
+        </div>
       </section>
 
       <!-- Widget 4: Live text preview -->

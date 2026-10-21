@@ -1,0 +1,147 @@
+:root {
+  --bg: #FCFFFC; /* porcelain */
+  --card-bg: #F4F6F5;  /* platinum */
+  --text: #020122; /* persian blue */
+  --btn-text: #020122;
+  --border: #F5F5F5; /* white smoke */
+  --accent: #E9AFD3; /* taupe */
+
+  --font-header: "Henny Penny", cursive;
+  --font-body: "Fredoka", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.dark {
+  --bg: black; /* persian blue */
+  --card-bg: #14123A; 
+  --text: #FCFFFC;
+  --border: #14123A;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border-bottom: solid 1px var(--border);
+}
+
+header h1 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+}
+
+.btn {
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* outline: none; */
+
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  background-color: var(--accent);
+  color: var(--btn-text);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-btn-red {
+  background-color: red;
+  color: #FCFFFC;
+}
+
+.color-btn-green {
+  background-color: green;
+  color: #FCFFFC;
+}
+
+.color-btn-blue {
+  background-color: blue;
+  color: #FCFFFC;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  gap: 5em;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text);
+
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.card .button-container {
+  margin: 1rem;
+}
+
+.card h2 {
+  font-size: 2rem;
+}
+
+h2, p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#count {
+  font-size: 3rem;
+}
+
+.color-box {
+  height: 10rem;
+  width: 20rem;
+  background-color: var(--accent);
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+#inputText {
+  padding: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  width: 80%;
+}
+
+#textPreview {
+  min-height: 5rem;
+  background: var(--bg); 
+  color: var(--text);
+}
