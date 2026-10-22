@@ -37,13 +37,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 3rem 0.5rem 3rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   border-bottom: solid 1px var(--border);
 }
 
 header h1 {
   font-family: var(--font-header);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -89,7 +89,7 @@ header h1 {
   flex-direction: column;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 1rem;
+  padding: 2rem;
   gap: 5em;
 }
 
@@ -97,7 +97,7 @@ header h1 {
   background-color: var(--card-bg);
   color: var(--text);
 
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding-bottom: 1rem;
   border-radius: 16px;
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -113,7 +113,7 @@ header h1 {
 }
 
 .card h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h2, p {
@@ -135,7 +135,7 @@ h2, p {
 
 .color-box, .random-color-box {
   height: 10rem;
-  width: 20rem;
+  width: 15rem;
   background-color: var(--accent);
   border-radius: 16px;
   margin-bottom: 1rem;
@@ -152,4 +152,55 @@ h2, p {
   min-height: 5rem;
   background: var(--card-bg); 
   color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2em;
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  #toggleTheme {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0;
+    gap: 5em;
+    max-width: 1000px;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+
+  header {
+    padding: 0 1.5rem  0 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .card h2 {
+    font-size: 2.3rem;
+  }
 }
