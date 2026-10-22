@@ -4,6 +4,12 @@ const reset = document.querySelector("#reset");
 const decrease = document.querySelector("#decrease");
 const colorChanger = document.querySelector("#changeColor");
 const boxColorChanger = document.querySelector(".random-color-box");
+const redButton = document.querySelector(".color-btn-red");
+const greenButton = document.querySelector(".color-btn-green");
+const blueButton = document.querySelector(".color-btn-blue");
+const boxColorChanger3 = document.querySelector(".color-box");
+const inputText = document.querySelector("#inputText");
+const textPreview = document.querySelector("#textPreview");
 
 let ctr = 0;
 
@@ -53,3 +59,18 @@ colorChanger.addEventListener("click", function () {
   boxColorChanger.style.backgroundColor = randomColor();
 });
 
+redButton.addEventListener("click", function() {
+  boxColorChanger3.style.backgroundColor = "red";
+});
+
+greenButton.addEventListener("click", function() {
+  boxColorChanger3.style.backgroundColor = "green";
+});
+
+blueButton.addEventListener("click", function() {
+  boxColorChanger3.style.backgroundColor = "blue";
+});
+
+inputText.addEventListener("input", function () {
+  textPreview.textContent = inputText.value;
+});
