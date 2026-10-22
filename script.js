@@ -10,9 +10,11 @@ const blueButton = document.querySelector(".color-btn-blue");
 const boxColorChanger3 = document.querySelector(".color-box");
 const inputText = document.querySelector("#inputText");
 const textPreview = document.querySelector("#textPreview");
+const toggleTheme = document.querySelector("#toggleTheme");
+
 
 let ctr = 0;
-
+let flag = true;
 
 function checkCount() {
   if (ctr > 0) {
@@ -73,4 +75,16 @@ blueButton.addEventListener("click", function() {
 
 inputText.addEventListener("input", function () {
   textPreview.textContent = inputText.value;
+});
+
+toggleTheme.addEventListener("click", function() {
+  if (flag === true) {
+    document.body.classList.add("dark");
+    toggleTheme.textContent = "Light Mode";
+    flag = false;
+  } else if (flag === false) {
+    document.body.classList.remove("dark");
+    toggleTheme.textContent = "Dark Mode";
+    flag = true;
+  }
 });

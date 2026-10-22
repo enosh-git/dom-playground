@@ -133,7 +133,7 @@ h2, p {
   color: red;
 }
 
-.color-box {
+.color-box, .random-color-box {
   height: 10rem;
   width: 20rem;
   background-color: var(--accent);
@@ -150,18 +150,6 @@ h2, p {
 
 #textPreview {
   min-height: 5rem;
-  background: var(--bg); 
+  background: var(--card-bg); 
   color: var(--text);
-}
-
-.random-color-box {
-  height: 10rem;
-  width: 20rem;
-  background-color: var(--accent);
-  border-radius: 16px;
-  margin-bottom: 1rem;
-}
-
-#textPreview {
-  background-color: var(--card-bg);
 }
